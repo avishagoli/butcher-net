@@ -1,0 +1,1375 @@
+/*  font  */
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+
+/*  שאילתות מדיה להתאמה של הדף בהגדלה עד 200% */
+@media only screen and (max-width: 1400px) {
+
+    #one-logo {
+        width: 60px;
+    }
+
+    .col .span_3_of_6 {
+        position: absolute;
+        display: block;
+        right: 90%;
+    }
+    .container-dofd {
+        position: relative;
+        margin: 5% 10% 0% 30%;
+    }
+
+    #first-nav {
+        right: 10%;
+        top: 8%;
+    }
+
+    #secound-nav {
+        z-index: 5000;
+    }
+
+    .doneness .shipud-pic {
+        position: absolute;
+        display: inline-block;
+        top: 20%;
+        left: -35%;
+        height: 600px;
+    }
+
+    .box#rare {
+        z-index: 1000;
+        position: absolute;
+        display: inline-block;
+        top: 24%;
+        left: -33%;
+        width: 180px;
+        height: 17%;
+        background: #05050544;
+        box-shadow: #05050544 3px 1px;
+    }
+
+    #chef_pic {
+        position: absolute;
+        top: 18%;
+        left: -227px;
+        width: 60%;
+        left: -220px;
+        z-index: -100;
+    }
+
+    #hand_method {
+        display: block;
+        right: 0%;
+    }
+
+    #temperature_method {
+        position: relative;
+        top: 100px;
+        right: 0;
+    }
+
+       /* דף זיהוי מידות עשייה */
+       ul.nav-ul {
+        height: 85px;
+        display: flex;
+        align-items: center;
+        box-shadow: 8px 12px 80px #050505;
+    }
+
+    /* נטרול הגובה של התרפיט כדי שלא יעלה על השיפוד ויהיה לחיץ */
+    div#navbar-doneness.header_navbar {
+        height: 0;
+    }
+
+
+
+    #breadcrumbs {
+        right: -25%;
+    }
+
+    .bg-smoke header {
+        position: sticky;
+        top: 0;
+        background: none;
+        height: 155px;
+        z-index: 1;
+}
+    
+    
+    #header-doneness {
+    position: sticky;
+    top: 0;
+    background-color: #05050570;
+    height: 0px;
+    z-index: 1;
+}
+
+div#breadcrumbs {
+    top: -55px;
+    display: block;
+    position: relative;
+    right: -10%;
+}
+
+
+        /* חוצץ לבן ייעלם בהגדלה מעל 100 אחוז */
+
+        #zoom-white-block-hide {
+            display: none;
+        }
+
+        img#arrow-choose {
+            position: absolute;
+            left: -4%;
+            top: -590px;
+            margin-top: 20px;
+        }
+
+        img#temperature {
+            width: 5px;
+        }
+}     
+
+
+body {
+    display: initial;
+    width: 1280px !important;
+    direction: rtl;
+    background-color: #050505;
+    color: white;
+    font-family: 'Assistant', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #05050570;
+    height: 155px;
+    z-index: 1;
+}
+
+.container-dofd {
+    position: relative;
+    margin: 3% 14% 0% 30%;
+    padding: 10px;
+}
+/* nav-1 */
+.nav-1 {
+    display: block;
+    font-size: x-large;
+}
+
+.header_navbar {
+    height: 155px;
+}
+
+.nav-ul {
+    height: 155px;
+    display: flex;
+    align-items: center;
+    background-color: #000000de;
+    box-shadow: 8px 12px 80px #050505;
+}
+
+
+.drop-rap {
+    display: none;
+    position: absolute;
+    background: #050505b7;
+}
+
+.drop-nav {
+    font-family: 'Assistant', sans-serif;
+    display: block;
+    background-color: #050505;
+    color: white;
+    text-align: center;
+    width: -94px;
+    padding: unset;
+    margin-right: 0 auto;
+}
+
+    .drop-nav:hover li {
+        display: block;
+        position: relative;
+        right: 140px;
+        top: -49px;
+    }
+
+    .drop-nav:focus li {
+        display: block;
+        position: relative;
+        right: 140px;
+        top: -49px;
+    }
+
+
+.top-nav {
+    font-family: 'Assistant', sans-serif;
+    float: right;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    /*  גורם לתפריט לרדת ב175 אחוז הגדלה */
+    width: 185px;
+    height: 30px;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+    .top-nav:hover ul, .top-nav:focus ul, .top-nav:focus-within ul {
+        padding: 0;
+        float: none;
+        color: white;
+        display: block;
+        position: relative;
+        top: 20px;
+        box-shadow: 0px 8px 40px #ffffff38;
+    }
+
+    .top-nav:hover, .top-nav:focus, .top-nav:focus-within {
+        border-bottom: 3px solid #ffd000;
+        transition: 0.2s;
+        z-index: 1;
+    }
+
+
+
+
+.page-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    position: relative;
+    height: 34px;
+    padding-top: 9px;
+}
+
+@keyframes opacity {
+
+    0% {
+        background-color:  #ffd000;
+        color: #000;
+
+    }
+    70% {
+        background-color: #000;
+          color: #ffd000;
+          opacity: 0.8;
+       }
+
+       100% {
+        background-color:  #ffd000;
+        color: #000;
+        opacity: 1;
+       }
+        
+
+}
+
+
+    .page-link:hover, .page-link:focus, .page-link:focus-within {
+        color: #ffd000;
+        background-color: #80808000;
+        padding-top: 9px;
+        animation: opacity 1s ease-in-out ;
+      
+    }
+
+nav ul .nav-image {
+    height: fit-content;
+    margin-left: 40px;
+}
+
+    nav ul .nav-image:hover, .nav-image:focus-within {
+        transition: 0.2s;
+        transform: scale(1.1);
+        background-color: transparent;
+    }
+
+    .no-drop{
+        cursor:no-drop;
+    }
+/* Breadcrumbs */
+
+nav ol li {
+    display: inline-block;
+    font-family: 'Assistant', sans-serif;
+}
+
+    nav ol li:after {
+        content: ">";
+    }
+
+    nav ol li:last-child:after {
+        content: " ";
+    }
+
+
+#breadcrumbs {
+    margin-right: 216px;
+}
+
+h1 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 36px;
+    color: #ffd000;
+    height: 100px;
+}
+
+h2 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 28px;
+    color: #ffd000;
+    height: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+    /* פוקוס על קישור במעבר עם המקלדת - 2.4.7 */
+    a:focus {
+        border: 2px solid #ffd000;
+    }
+
+    /* קישור נסתר - דלג לתוכן*/
+
+
+    a.mainContent {
+        font-size: large;
+        position: fixed;
+        overflow: hidden;
+        color: white;
+        right: -2000px;
+    }
+
+
+        a.mainContent:focus {
+            top: 10%;
+            right: 12%;
+            overflow: visible;
+        }
+
+
+.chef {
+    position: absolute;
+    top: 0;
+    left: -200px;
+}
+
+p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 26px;
+    line-height: 120%;
+    display: block;
+    margin-bottom: 6%;
+    width: 50%;
+}
+
+    p.intro {
+        line-height: 150%;
+        width: 55%;
+    }
+
+.intro_long {
+    width: 70%;
+}
+
+
+.logo {
+    width: 100px;
+    text-decoration: none;
+}
+
+
+a .logo:hover {
+    border-bottom: none;
+}
+
+
+/*footer*/
+.site-footer-home {
+    background-color: #26272b;
+    padding: 25px 0 1px 0px;
+    color: #737373;
+}
+.site-footer {
+    background-color: #26272b;
+    padding: 25px 0 1px 0px;
+    color: #737373;
+    margin-top: 10%;
+}
+
+
+    .site-footer hr {
+        border-top-color: #bbb;
+        opacity: 0.5
+    }
+
+
+
+footer nav {
+    padding: 0;
+}
+
+footer nav ul {
+    text-align: center;
+    margin-top: 50px;
+}
+    footer nav ul li {
+        display: inline-block;
+    }
+
+        footer nav ul li a {
+            color: #b5b5b5;
+        }
+
+            footer nav ul li a:after {
+                content: "|";
+                display: inline-block;
+                height: 10px;
+                margin: 0 12px 0 7px;
+            }
+            footer nav ul li a:hover, footer nav ul li a:focus, footer nav ul li a:focus-within{
+                color:white;
+            }
+
+            footer nav ul li:last-child a:after {
+                content: "";
+            }
+
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+        .site-footer .site-footer .social-icons {
+            text-align: center
+        }
+}
+
+
+
+
+
+
+ /* דף מידות עשייה  */
+
+
+ /* תמונת רקע - עשן */
+ .bg-smoke{
+     background-color: #050505a9;
+     background-image: url(../images/smoke.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     background-blend-mode: soft-light;
+    }
+
+    
+/*  שתי שיטות לזיהוי מידות עשייה */
+.methods {
+    width: 40%;
+    position: relative;
+}
+
+.method_1 {
+    position: relative;
+    margin-right: 10px;
+}
+
+.method_2 {
+    float: inline-start;
+    position: absolute;
+    top: 0;
+    right: 145%;
+}
+
+
+
+.methods p {
+    width: 105%;
+    
+    line-height: 150%;
+}
+
+/* הפרדה בין השיטות ע"י חוצץ לבן */
+.white-block {
+    position: absolute;
+    top: -5%;
+    right: 124%;
+
+    width: 3px;
+    height: 250px;
+    background-color: white;
+    border-radius: 150px;
+}
+
+/* תמונת כף יד */
+img#rare_hand {
+    transform: scaleX(-1);
+        display: block;
+        position: relative;
+        width: 355px;
+        right: 0;
+        top: 10%;
+    }
+
+/* תמונת מד חום*/
+img#temperature {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    right: 0;
+    top: 10%;
+}
+
+/* אינטראקציה על השיפוד במעבר עכבר  */
+
+.box {
+    z-index: 1000;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 14%;
+    left: 10%;
+    width: 50%;
+    height: 17%;
+}
+
+.box2 {
+    z-index: 1000;
+    position: absolute;
+    top: 32%;
+    left: -10%;
+    width: 20%;
+    height: 19%;
+    background: #05050544;
+}
+
+
+.span_1_of_6 .doneness {
+    position: absolute;
+    top: 6%;
+    left: -30%;
+    width: 27%;
+}
+
+    .span_1_of_6 .doneness.img_d {
+        position: relative;
+        bottom: 0;
+    }
+
+
+
+/*************************************/
+/*        אינטראקציית שיפוד        */
+/************************************/
+
+
+/*  תמונת נתח מידה עשייה רייר */
+#r {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    top: 0%;
+    left: -10%;
+    filter: opacity(50%);
+}
+
+
+    #r:hover {
+        filter: opacity(100%);
+        transition: 0.5s ease-in-out;
+    }
+
+
+/*  תיבת טקסט שנכנסת מצד ימין - רייר */
+@keyframes slide-right {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(100px)
+    }
+}
+
+span#r_text {
+    z-index: 5000;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    opacity: 0;
+}
+
+
+/* פוקוס במעבר על השיפוד ייגרום לתמונה לקבל אופסיטי גבוה*/
+#r_aDoneness:focus img, #mr_aDoneness:focus img, #m_aDoneness:focus img, #mw_aDoneness:focus img, #wd_aDoneness:focus img {
+    border: 2px solid #ffd000;
+    filter: opacity(100%);
+}
+
+
+
+/* הפעלה של האנימציה בשיפוד גם במעבר עכבר וגם בפוקוס */
+#r_aDoneness:hover span, #r_aDoneness:focus span {
+    animation: slide-right .5s cubic-bezier(.25,.46,.45,.94) both;
+    text-decoration: #ffd000;
+    background-color: #050505;
+    padding: 3%;
+    color: #fff;
+    border-radius: 10%;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.35);
+    position: absolute;
+    padding: 1%;
+    left: -60%;
+    /* top: 30%; */
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+    z-index: 5000;
+}
+
+
+/*  תמונת נתח מידה עשייה מדיום-רייר */
+
+#m_r {
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    top: 68%;
+    left: -10%;
+    filter: opacity(50%);
+}
+
+    #m_r:hover {
+        filter: opacity(100%);
+        transition: 0.5s ease-in-out;
+    }
+
+
+
+/*  תיבת טקסט שנכנסת מצד ימין - רייר */
+span#mr_text {
+    z-index: 50000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+}
+
+/* הפעלה של האנימציה בשיפוד גם במעבר עכבר וגם בפוקוס */
+#mr_aDoneness:hover span, #mr_aDoneness:focus span {
+    animation: slide-right .5s cubic-bezier(.25,.46,.45,.94) both;
+    text-decoration: #ffd000;
+    background-color: #050505;
+    padding: 3%;
+    color: #fff;
+    border-radius: 10%;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.35);
+    position: absolute;
+    padding: 1%;
+    left: -85%;
+    /* top: 30%; */
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+    z-index: 5000;
+}
+
+
+/*  תמונת נתח מידה עשייה מדיום */
+#m {
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    top: 132%;
+    left: -10%;
+    filter: opacity(50%);
+}
+
+
+    #m:hover {
+        filter: opacity(100%);
+        transition: 0.5s ease-in-out;
+    }
+
+/* תיבת טקסט שנכנסת מצד ימין - מדיום */
+span#m_text {
+    z-index: 5000;
+    position: absolute;
+    left: 0;
+    top: 175%;
+    opacity: 0;
+}
+
+/* הפעלה של האנימציה בשיפוד גם במעבר עכבר וגם בפוקוס */
+#m_aDoneness:hover span, #m_aDoneness:focus span {
+    animation: slide-right .5s cubic-bezier(.25,.46,.45,.94) both;
+    text-decoration: #ffd000;
+    background-color: #050505;
+    padding: 3%;
+    color: #fff;
+    border-radius: 25%;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.35);
+    position: absolute;
+    padding: 2%;
+    left: -75%;
+    /* top: 30%; */
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+    z-index: 5000;
+}
+
+
+
+/*  תמונת נתח מידה עשייה מדיום-וול */
+
+#m_w {
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    top: 185%;
+    left: -10%;
+    filter: opacity(50%);
+}
+
+
+    #m_w:hover {
+        filter: opacity(100%);
+        transition: 0.5s ease-in-out;
+    }
+
+
+/*  תיבת טקסט שנכנסת מצד ימין - מדיום-וול */
+span#mw_text {
+    z-index: 5000;
+    position: absolute;
+    left: 0;
+    top: 230%;
+    opacity: 0;
+}
+
+/* הפעלה של האנימציה בשיפוד גם במעבר עכבר וגם בפוקוס */
+#mw_aDoneness:hover span, #mw_aDoneness:focus span {
+    animation: slide-right .5s cubic-bezier(.25,.46,.45,.94) both;
+    text-decoration: #ffd000;
+    background-color: #050505;
+    padding: 3%;
+    color: #fff;
+    border-radius: 10%;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.35);
+    position: absolute;
+    padding: 1%;
+    left: -85%;
+    /* top: 30%; */
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+    z-index: 5000;
+}
+
+
+
+
+/*  תמונת נתח מידה עשייה וול-דאן */
+
+#w_d {
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    top: 275%;
+    left: -10%;
+    filter: opacity(50%);
+}
+
+
+    #w_d:hover {
+        filter: opacity(100%);
+        transition: 0.5s ease-in-out;
+    }
+
+
+/*  תיבת טקסט שנכנסת מצד ימין - וול-דאן */
+span#wd_text {
+    z-index: 5000;
+    position: absolute;
+    left: 0;
+    top: 295%;
+    opacity: 0;
+}
+
+/* הפעלה של האנימציה בשיפוד גם במעבר עכבר וגם בפוקוס */
+#wd_aDoneness:hover span, #wd_aDoneness:focus span {
+    animation: slide-right .5s cubic-bezier(.25,.46,.45,.94) both;
+    text-decoration: #ffd000;
+    background-color: #050505;
+    padding: 3%;
+    color: #fff;
+    border-radius: 10%;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.35);
+    position: absolute;
+    padding: 1%;
+    left: -75%;
+    /* top: 30%; */
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+    z-index: 5000;
+}
+
+
+
+
+.arrow {
+    position: absolute;
+    width: 100%;
+}
+
+    .arrow p {
+        position: relative;
+        right: 60%;
+        top: -20px;
+    }
+
+    .arrow img {
+        position: absolute;
+        top: -560px;
+        width: 25%;
+        left: -7%;
+    }
+
+.textBox {
+    display: inline;
+}
+
+/* טופס צור קשר */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #ffd000;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+.contactUs-box {
+    background-color: #ffffff40;
+    margin-top: 16px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 65%;
+}
+
+.container-contact{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+
+#contact-us-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/***************************************
+/************** דף הבית ***************/
+/***************************************/
+
+
+    /* תמונת אווירה */
+
+
+.avira {
+    position: relative;
+    height: 780px;
+    background-image: url(../images/tageline-bg-img.jpg);
+    background-repeat: round;
+    background-size: 1300px 1300px;
+    background-position: 0 100px;
+    background-attachment: fixed;
+    width: 93%;
+    animation: moveSlideshow 1.5s ease-in-out;
+    right: 4%;
+}
+
+.backgroung-tagline{
+    background-image: url(/images/bg-tagline.png);
+    position: absolute;
+    width: 100%;
+    z-index: 5000;
+}
+
+.container-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+  @keyframes moveSlideshow {
+    0% { 
+        transform: translateY(15 0%);  
+      }
+      100% { 
+        transform: translateY(0);  
+      }
+  }
+
+  
+
+
+/* סלוגן האתר */
+.tagline {
+    position: relative;
+    font-size: 60px;
+    top: 60%;
+    clear: both;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.logo-head-tagline{
+    display: block;
+    position: relative;
+    top: 60%;
+    margin: 0 auto;
+    width: 45%;
+}
+
+/* על מנת שהסלוגן יופיע מעל התמונה */
+    .homepage_background {
+    position: relative;
+    animation: moveSlideshow 3s ease-in-out;
+}
+
+#home-main {
+    width: 100%;
+    height: 100%;
+}
+
+.first-home-sec {
+    margin-top: 8%;
+    position: relative;
+    height: 450px;
+    margin-right: 9%;
+    margin-left: 9%;
+}
+.p-home {
+    width: 100%;
+}
+.h-home {
+    padding-top: 7%;
+}
+/* עיצוב לקישור בסוף כל הפניה למאמר */
+.a-link-after-p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 26px;
+    color: #ffd000;
+}
+.under-link {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.line-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+    .line-wrapper > img {
+        object-fit: cover;
+        width: 60%;
+    }
+
+.link-after-p {
+
+}
+
+
+        .link-after-p:hover {
+/*            text-decoration: underline;
+            text-decoration-style: double;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+*/        }
+
+.mini_articles {
+    height: 100%;
+}
+
+.link-p-wrapper {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+/* לבחור נכון */
+#meat_tips {
+    background-image: url(../images/istockphoto-122696908-612x612.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+    background-size: contain;
+    width: 450px;
+    height: 450px;
+}
+
+
+/* להגיע מוכנים לקצב */
+#meats {
+    background-image: url(../images/meats.png);
+    background-repeat: no-repeat;
+    position: relative;
+    float: right;
+    background-size: contain;
+    width: 523px;
+    height: 450px;
+}
+.sec-h-home {
+    float: left;
+    padding-top: 7%;
+}
+.sec-p-home {
+    width: 283px;
+}
+
+/* להפוך בדיוק ברגע הנכון */
+#real-time {
+    background-image: url(../images/real-time.png);
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+    background-size: contain;
+    width: 584px;
+    height: 606px;
+}
+
+
+
+
+
+
+
+/*  איך לבחור נכון - תמונת אווירה */
+.container-how-to {
+    position: relative;
+    margin: 3% 14% 0% 14%;
+    padding: 10px;
+}
+
+#chef {
+    background-image: url(../images/chef-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 49%;
+    width: 640px;
+    height: 426px;
+    position: absolute;
+    float: left;
+    top: 11px;
+}
+
+
+.top-how-to {
+    width: 100%;
+}
+.sec-how-to {
+    margin-right: 11%;
+    margin-top: 15%;
+}
+.pics-holder {
+    height: 400px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.good-meat {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+    .good-meat > img {
+        width: 90%;
+        object-fit: contain;
+    }
+
+.bad-meat > img {
+    width: 95%;
+    object-fit: contain;
+}
+
+.bad-meat {
+    width: 370px;
+    height: 300px;
+    display: inline-block;
+}
+.h-how-to {
+    font-family: 'Assistant', sans-serif;
+    font-size: 36px;
+    color: #ffd000;
+}
+
+.sec-h-how-to {
+    width: 100%;
+    font-size: 30px;
+}
+.p-how-to {
+    line-height: 150%;
+    width: 46%;
+}
+
+.bullet-holder {
+    margin-right: 3%;
+    margin-top: 3%;
+}
+.bullet-holder-prime {
+    margin-top: 3%;
+    display: inline-flex;
+}
+
+.bullets {
+    font-family: 'Assistant', sans-serif;
+    font-size: 26px;
+    height: 37px;
+    width: 740px;
+}
+
+.bullets-prime {
+    display: inline-block;
+    float: left;
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Select-pic {
+    width: 283px;
+    height: 302px;
+    position: relative;
+    left: 68%;
+    float: left;
+    transform: rotate(-27.78deg);
+}
+.Prime-pic {
+    width: 216px;
+    height: 275px;
+    position: relative;
+    float: left;
+    right: 17%;
+    transform: rotate(-27.78deg);
+}
+
+    .Choice-pic > img, .Prime-pic > img, .Select-pic > img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+.Choice-pic {
+    width: 202px;
+    height: 277px;
+    position: relative;
+    float: left;
+    left: 26%;
+    transform: rotate(-27.78deg);
+}
+
+.last-p-how-to {
+    font-family: 'Assistant', sans-serif;
+    font-size: 26px;
+    width: 362px;
+    margin-right: 10%;
+    margin-right: 11%;
+    margin-top: 15%;
+}
+
+/***************************************
+/**************** siteMap ****************/
+    /***************************************/
+    .mainContent-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+ul#siteMap > li {
+    margin: 14px;
+    display: inline-flex;
+    padding-right: 50px;
+}
+
+.foot-nav {
+    display: block;
+}
+
+
+
+
+/***************************************
+/**************** grid ****************/
+/***************************************
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+    width: 100%;
+}
+
+.span_2_of_3 {
+    width: 66.1%;
+}
+
+.span_1_of_3 {
+    width: 32.2%;
+}
+
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+    /*background-color: rgba(255, 0, 128, 0.247);*/
+}
+
+    .col:first-child {
+        margin-left: 0;
+    }
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+
+    .span_3_of_3, .span_2_of_3, .span_1_of_3 {
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .arrow img#arrow-choose {
+        position: absolute;
+        left: -4%;
+        top: -1160px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .arrow img#arrow-choose {
+        position: absolute;
+        left: -4%;
+        top: -1160px;
+        margin-top: 20px;
+    }
+    }
+
+    
+    @media only screen and (max-width: 1050px) {
+        .arrow img#arrow-choose {
+            position: absolute;
+            left: -4%;
+            top: -660px;
+            margin-top: 20px;
+        }
+        }
+
+            
+        @media only screen and (max-width: 1000px) {
+            .arrow img#arrow-choose {
+                position: absolute;
+                left: -4%;
+                top: -880px;
+                margin-top: 20px;
+            }
+            }
+        
+            
+                        
+            @media only screen and (max-width: 900px) {
+                .arrow img#arrow-choose {
+                    position: absolute;
+                    left: -4%;
+                    top: -650px;
+                    margin-top: 20px;
+                }
+                }
+                @media only screen and (max-width: 850px){
+                    .arrow img#arrow-choose {
+                        position: absolute;
+                        left: -4%;
+                        top: -770px;
+                        margin-top: 20px;
+                    }
+                }
+                                        
+        .last-link-wrapper-dofd {
+    height: 160px;
+}
+
+.last-link-dofd {
+    position: relative;
+    display: flex;
+    right: 22.5%;
+    bottom: 55%;
+}

@@ -1,0 +1,1137 @@
+/*  font  */
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+
+/*  שאילתות מדיה להתאמה של הדף בהגדלה עד 200% */
+@media only screen and (max-width: 1400px) {
+
+    #one-logo {
+        width: 100px;
+    }
+
+    .col .span_3_of_6 {
+        position: absolute;
+        display: block;
+        right: 90%;
+    }
+
+    .container-contact, .container-how-to, container-siteMap {
+        position: relative;
+        margin: 5% 10% 0% 30%;
+    }
+
+    #first-nav {
+        right: 10%;
+        top: 8%;
+    }
+    .abut-nav {
+        font-family: 'Assistant', sans-serif;
+        display: block;
+        background-color: #050505;
+        color: white;
+        text-align: center;
+        width: -94px;
+        padding: unset;
+        margin-right: 0 auto;
+    }
+    #secound-nav {
+        z-index: 5000;
+    }
+
+    .doneness .shipud-pic {
+        position: absolute;
+        display: inline-block;
+        top: 20%;
+        left: -35%;
+        height: 600px;
+    }
+
+    .box#rare {
+        z-index: 1000;
+        position: absolute;
+        display: inline-block;
+        top: 24%;
+        left: -33%;
+        width: 180px;
+        height: 17%;
+        background: #05050544;
+        box-shadow: #05050544 3px 1px;
+    }
+
+    #chef_pic {
+        position: absolute;
+        top: 18%;
+        left: -227px;
+        width: 60%;
+        left: -220px;
+        z-index: -100;
+    }
+
+    #hand_method {
+        display: block;
+        right: 0%;
+    }
+
+    #temperature_method {
+        position: relative;
+        top: 100px;
+        left: 0;
+    }
+
+
+
+
+
+        /* חוצץ לבן ייעלם בהגדלה מעל 100 אחוז */
+        #zoom-white-block-hide {
+            display: none;
+        }
+}     
+
+body {
+    display: initial;
+    width: 1280px !important;
+    direction: rtl;
+    background-color: #050505;
+    color: white;
+    font-family: 'Assistant', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    height: 155px;
+    z-index: 1;
+}
+
+
+/* nav-1 */
+.nav-1 {
+    display: block;
+    font-size: x-large;
+}
+
+.header_navbar {
+    height: 155px;
+}
+
+.nav-ul {
+    height: 155px;
+    display: flex;
+    align-items: center;
+    background-color: #000000de;
+    box-shadow: 8px 12px 80px #050505
+}
+
+
+.drop-rap {
+    display: none;
+    position: absolute;
+    background: #050505b7;
+}
+
+.drop-nav {
+    font-family: 'Assistant', sans-serif;
+    display: block;
+    background-color: #050505;
+    color: white;
+    text-align: center;
+    width: -94px;
+    padding: unset;
+    margin-right: 0 auto;
+}
+
+    .drop-nav:hover li {
+        display: block;
+        position: relative;
+        right: 140px;
+        top: -49px;
+    }
+
+    .drop-nav:focus li {
+        display: block;
+        position: relative;
+        right: 140px;
+        top: -49px;
+    }
+
+
+.top-nav {
+    font-family: 'Assistant', sans-serif;
+    float: right;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    /*  גורם לתפריט לרדת ב175 אחוז הגדלה */
+    width: 185px;
+    height: 30px;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+    .top-nav:hover ul, .top-nav:focus ul, .top-nav:focus-within ul {
+        padding: 0;
+        float: none;
+        color: white;
+        display: block;
+        position: relative;
+        top: 20px;
+        box-shadow: 0px 8px 40px #ffffff38;
+    }
+
+    .top-nav:hover, .top-nav:focus, .top-nav:focus-within {
+        border-bottom: 3px solid #ffd000;
+        transition: 0.2s;
+        z-index: 1;
+    }
+
+
+
+
+.page-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    position: relative;
+    height: 34px;
+    padding-top: 9px;
+}
+
+
+
+    .page-link:hover, .page-link:focus, .page-link:focus-within {
+        color: #ffd000;
+        background-color: #80808000;
+        padding-top: 9px;
+    
+      
+    }
+
+nav ul .nav-image {
+    height: fit-content;
+    margin-left: 40px;
+}
+
+    nav ul .nav-image:hover, .nav-image:focus-within {
+        transition: 0.2s;
+        transform: scale(1.1);
+        background-color: transparent;
+    }
+
+    .no-drop{
+        cursor:no-drop;
+    }
+/* Breadcrumbs */
+
+nav ol li {
+    display: inline-block;
+    font-family: 'Assistant', sans-serif;
+}
+
+    nav ol li:after {
+        content: ">";
+    }
+
+    nav ol li:last-child:after {
+        content: " ";
+    }
+
+
+#breadcrumbs {
+    margin-right: 216px;
+    margin-top: 25px;
+}
+
+    /* פוקוס על קישור במעבר עם המקלדת - 2.4.7 */
+    a:focus {
+        border: 2px solid #ffd000;
+    }
+
+    /* קישור נסתר - דלג לתוכן*/
+
+
+    a.mainContent {
+        font-size: large;
+        position: fixed;
+        overflow: hidden;
+        color: white;
+        right: -2000px;
+    }
+
+
+        a.mainContent:focus {
+            top: 10%;
+            right: 12%;
+            overflow: visible;
+        }
+
+.logo {
+    width: 100px;
+    text-decoration: none;
+}
+
+
+a .logo:hover {
+    border-bottom: none;
+}
+
+
+/*footer*/
+.site-footer-home {
+    background-color: #26272b;
+    padding: 25px 0 1px 0px;
+    color: #737373;
+}
+.site-footer {
+    background-color: #26272b;
+    padding: 25px 0 1px 0px;
+    color: #737373;
+    margin-top: 10%;
+}
+
+
+    .site-footer hr {
+        border-top-color: #bbb;
+        opacity: 0.5
+    }
+
+
+
+footer nav {
+    padding: 0;
+}
+
+footer nav ul {
+    text-align: center;
+    margin-top: 50px;
+}
+    footer nav ul li {
+        display: inline-block;
+    }
+
+        footer nav ul li a {
+            color: #b5b5b5;
+        }
+
+            footer nav ul li a:after {
+                content: "|";
+                display: inline-block;
+                height: 10px;
+                margin: 0 12px 0 7px;
+            }
+            footer nav ul li a:hover, footer nav ul li a:focus, footer nav ul li a:focus-within{
+                color:white;
+            }
+
+            footer nav ul li:last-child a:after {
+                content: "";
+            }
+
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+        .site-footer .site-footer .social-icons {
+            text-align: center
+        }
+}
+
+
+/* טופס צור קשר */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #ffd000;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+.contactUs-box {
+    background-color: #ffffff40;
+    margin-top: 16px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 65%;
+}
+
+.container-contact{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+
+#contact-us-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-contact-us {
+    margin: 2%;
+    font-size: 18px;
+}
+/***************************************
+/************** דף הבית ***************/
+/***************************************/
+/* תמונת אווירה */
+.avira {
+    position: relative;
+    height: 780px;
+    background-image: url(../images/tageline-bg-img.jpg);
+    background-repeat: round;
+    background-size: 1300px 1300px;
+    background-position: 0 100px;
+    background-attachment: fixed;
+    width: 93%;
+    animation: moveSlideshow 1.5s ease-in-out;
+    right: 4%;
+}
+
+.container-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+  @keyframes moveSlideshow {
+    0% { 
+        transform: translateY(15 0%);  
+      }
+      100% { 
+        transform: translateY(0);  
+      }
+  }
+
+  
+
+
+/* סלוגן האתר */
+.tagline {
+    position: relative;
+    font-size: 60px;
+    top: 60%;
+    clear: both;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.logo-head-tagline{
+    display: block;
+    position: relative;
+    top: 60%;
+    margin: 0 auto;
+    width: 45%;
+}
+
+/* על מנת שהסלוגן יופיע מעל התמונה */
+    .homepage_background {
+    position: relative;
+    animation: moveSlideshow 3s ease-in-out;
+}
+
+#home-main {
+    width: 100%;
+    height: 100%;
+}
+
+.first-home-sec {
+    margin-top: 8%;
+    position: relative;
+    height: 450px;
+    margin-right: 9%;
+    margin-left: 9%;
+}
+.p-home {
+    width: 100%;
+}
+.h-home {
+    padding-top: 7%;
+}
+/* עיצוב לקישור בסוף כל הפניה למאמר */
+.a-link-after-p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 26px;
+    color: #ffd000;
+}
+.under-link {
+    text-align: center;
+}
+
+.line-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+    .line-wrapper > img {
+        object-fit: cover;
+        width: 60%;
+    }
+
+.mini_articles {
+    height: 100%;
+}
+
+.link-p-wrapper {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+/* לבחור נכון */
+#meat_tips {
+    background-image: url(../images/istockphoto-122696908-612x612.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+    background-size: contain;
+    width: 450px;
+    height: 450px;
+}
+
+
+/* להגיע מוכנים לקצב */
+#meats {
+    background-image: url(../images/meats.png);
+    background-repeat: no-repeat;
+    position: relative;
+    float: right;
+    background-size: contain;
+    width: 523px;
+    height: 450px;
+}
+.sec-h-home {
+    float: left;
+    padding-top: 7%;
+}
+.sec-p-home {
+    width: 283px;
+}
+
+/* להפוך בדיוק ברגע הנכון */
+#real-time {
+    background-image: url(../images/real-time.png);
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+    background-size: contain;
+    width: 584px;
+    height: 606px;
+}
+
+
+
+
+
+
+
+/*  איך לבחור נכון - תמונת אווירה */
+.container-how-to {
+    position: relative;
+    margin: 3% 14% 0% 14%;
+    padding: 10px;
+}
+
+#chef {
+    background-image: url(../images/chef-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 300px;
+    display: inline-block;
+    background-size: cover;
+}
+
+
+.how-to-wrapper {
+    width: 55%;
+}
+
+.top-how-to {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sec-how-to {
+    margin: 9%;
+}
+.pics-holder {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.good-meat {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+
+#center {
+    position: relative;
+    width: 55%;
+    height: 40%;
+    top: 40px;
+}
+
+ img#real-size {
+        position: relative;
+        top: 30%;
+ }
+
+ img#big-size {
+    width: 141%;
+    position: relative;
+    top: -35%;
+    left: 20%;
+}
+#big-pic{
+position: relative;
+    /* width: 100%; */
+    /* height: 40%; */
+    top: 40px;
+    width: 530px;
+    left: 25%;
+}
+    .good-meat > img {
+        width: 90%;
+        object-fit: contain;
+    }
+
+.bad-meat > img {
+    width: 95%;
+    object-fit: contain;
+}
+
+.bad-meat {
+    width: 370px;
+    height: 300px;
+    display: inline-block;
+}
+.h-how-to {
+    font-family: 'Assistant', sans-serif !important;
+    font-size: 36px;
+    color: #ffd000;
+    margin-bottom: 3%;
+}
+
+.sec-h-how-to {
+    width: 100%;
+    font-size: 30px;
+}
+.p-how-to {
+    line-height: 150%;
+    font-family: 'Assistant', sans-serif;
+    font-size: 26px;
+}
+
+.bullet-holder {
+    margin-right: 3%;
+    margin-top: 3%;
+}
+.bullet-holder-prime {
+    margin-top: 3%;
+    display: inline-flex;
+    width: 100%;
+    align-items: baseline;
+}
+
+.bullets {
+    font-family: 'Assistant', sans-serif;
+    font-size: 26px;
+    height: 37px;
+    width: 740px;
+}
+
+.bullets-prime {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.Select-pic {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    height: fit-content;
+}
+.Prime-pic {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+    .Choice-pic > img, .Prime-pic > img {
+        object-fit: contain;
+        width: 60%;
+        transform: rotate(-27.78deg);
+    }
+
+    .Select-pic > img {
+        object-fit: contain;
+        width: 92%;
+        transform: rotate(-27.78deg);
+    }
+
+.Choice-pic {
+    position: relative;
+    height: fit-content;
+    display: inline-block;
+}
+
+.last-p-how-to {
+    font-family: 'Assistant', sans-serif;
+    font-size: 26px;
+}
+
+.link-p-wrapper-how-to{
+    display: flex;
+    margin-top: 10%;
+}
+
+.link-after-p:hover a {
+    filter: saturate(0.3);
+    transition: all 0.1s ease;
+}
+
+.link-after-p:hover .line-wrapper {
+    filter: blur(1);
+    filter: saturate(0.3);
+    transition: all 0.1s ease;
+}
+.last-link-Choose {
+    left: 35%;
+    bottom: 40%;
+    position: relative;
+    align-self: flex-end;
+}
+
+.last-link-wrapper {
+    height: 100px;
+}
+
+/***************************************
+/**************** siteMap ****************/
+/***************************************/
+
+.container-siteMap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#siteMap-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+
+.map-wrapper {
+    width: 100%;
+}
+
+.nav-map-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-map h1 {
+    margin-top: -100px;
+}
+
+.mainContent-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: -4%;
+}
+
+.map-link:hover {
+    color: #ffd000;
+}
+
+.site-low {
+    color: rebeccapurple;
+    margin: 14px;
+    padding-right: 50px;
+}
+
+ul#siteMap > li {
+    margin: 0 14px;
+}
+
+
+ul#siteMap a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#siteMap {
+    margin-top: 4%;
+    display: inline-flex;
+}
+
+.site-nav {
+    display: block;
+    display: block;
+    text-align: center;
+    width: 185px;
+    height: 30px;
+    padding: 10px;
+}
+
+.h-map {
+    font-size: 36px;
+    margin-top: 2%;
+}
+
+.drop-rap-nav-rap {
+    position: absolute;
+}
+
+.drop-nav-map {
+    display: block;
+    margin-top: 13%;
+    height: 34px;
+    padding-top: 9px;
+    width: 114px;
+}
+
+.nav-rap-map {
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #ffd000;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li, h1, h2, a {
+    font-family: 'Assistant', sans-serif;
+}
+
+/***************************************
+/**************** about ****************/
+/***************************************/
+
+
+.container-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 17%;
+    margin-left: 17%;
+}
+
+.about-sec {
+    margin-top: 5%;
+    line-height: 1.5;
+    width: 86%;
+}
+
+#about-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-img {
+    display: inline-block;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    margin: 0px 0px 50px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p-about {
+    margin-left: 19%;
+    font-size: 18px;
+}
+.sec-h-about {
+    font-size: 26px;
+    padding-bottom: 3%;
+}
+.about-img p {
+    font-size: 19px;
+    position: relative;
+    top: 185px;
+}
+
+.about-img#avishag {
+    background-image: url('../images/avishag.jpg');
+}
+
+.about-img#shay {
+    background-image: url(../images/shay.png);
+}
+
+.about-img#avinoam {
+    background-image: url(../images/avinoan.png);
+}
+
+.about-img#karin {
+    background-image: url('../images/karin.png');
+}
+
+#logoHit {
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+    #logoHit img {
+        max-width: 220px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+
+/***************************************
+/**************** siteMap ****************/
+/***************************************/
+
+.container-siteMap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#siteMap-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+
+.map-wrapper {
+    width: 100%;
+}
+
+.nav-map-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-map h1 {
+    margin-top: -100px;
+}
+
+.mainContent-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: -4%;
+}
+
+.map-link:hover {
+    color: #ffd000;
+}
+
+.site-low {
+    color: rebeccapurple;
+    margin: 14px;
+    padding-right: 50px;
+}
+
+ul#siteMap > li {
+    margin: 0 14px;
+}
+
+
+ul#siteMap a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#siteMap {
+    margin-top: 4%;
+    display: inline-flex;
+}
+
+.site-nav {
+    display: block;
+    display: block;
+    text-align: center;
+    width: 185px;
+    height: 30px;
+    padding: 10px;
+}
+
+.h-map {
+    font-size: 36px;
+    margin-top: 2%;
+}
+
+.drop-rap-nav-rap {
+    position: absolute;
+}
+
+.drop-nav-map {
+    display: block;
+    margin-top: 13%;
+    height: 34px;
+    padding-top: 9px;
+    width: 114px;
+}
+
+.nav-rap-map {
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #ffd000;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li, h1, h2, a, p {
+    font-family: 'Assistant', sans-serif;
+}
+
+/***************************************
+/**************** grid ****************/
+    /***************************************
+
+/*  GROUPING  */
+    .group:before, .group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+    width: 100%;
+}
+
+.span_2_of_3 {
+    width: 66.1%;
+}
+
+.span_1_of_3 {
+    width: 32.2%;
+}
+
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+    /*background-color: rgba(255, 0, 128, 0.247);*/
+}
+
+    .col:first-child {
+        margin-left: 0;
+    }
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+
+    .span_3_of_3, .span_2_of_3, .span_1_of_3 {
+        width: 100%;
+    }
+}
+
+
+#end-meat {
+    background-image: url(../images/good-meat-end.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-size: cover;
+    float: left;
+}
+.big-meat {
+    width: 400px;
+    height: 300px;
+}
